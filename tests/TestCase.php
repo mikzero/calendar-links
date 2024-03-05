@@ -21,7 +21,7 @@ Bring a dog, bring a frog';
 
         return Link::create(
             'Birthday',
-            DateTime::class::createFromFormat('Y-m-d H:i', '2018-02-01 09:00', new DateTimeZone('UTC')),
+            DateTime::createFromFormat('Y-m-d H:i', '2018-02-01 09:00', new DateTimeZone('UTC')),
             DateTime::createFromFormat('Y-m-d H:i', '2018-02-01 18:00', new DateTimeZone('UTC'))
         )->description($description)->address('Party Lane 1A, 1337 Funtown');
     }
